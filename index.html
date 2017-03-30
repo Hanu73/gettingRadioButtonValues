@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="jquery.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">
+</head>
+<style>
+    @font-face {
+        font-family: 'Eras Demi ITC';
+        src: url('fonts/ERASBD.TTF');
+    }
+    .ErasFont{
+        font-family: Eras Demi ITC, sans-serif;
+    }
+</style>
+<body>
+<form align="center" style="margin-top: 15%;padding: 3%;background-color: #dbdbdb">
+    <h3 class="ErasFont" style="text-decoration: underline "> Click on the radio buttons to get the values  </h3>
+    <br>
+    <br>
+		<label> <input type="radio" name="countOfRooms" value="one" id="one"> 1 </label> &nbsp;
+        <label> <input type="radio" name="countOfRooms" value="two" id="two"> 2 </label> &nbsp;
+        <label> <input type="radio" name="countOfRooms" value="three" id="three"> 3 </label> &nbsp;
+        <label> <input type="radio" name="countOfRooms" value="four" id="four"> 4 </label> &nbsp;
+</form>
+
+
+<script>
+
+    $(document).ready(function(){
+ $('#one,#two,#three,#four').click(function(){
+            var radioValue=$('form input[type=radio]:checked').val();
+            alert(radioValue);
+        })
+    });
+ </script>
+</body>
+</html>
