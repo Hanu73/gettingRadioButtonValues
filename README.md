@@ -1,2 +1,2 @@
 # gettingRadioButtonValues
-Code to retrieve the values of Radio buttons
+Code to get the values of Radio buttons
